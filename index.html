@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Passeword 🔐</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🔐 Générateur de mot de passe sécurisé</h1>
+
+    <label for="length">Longueur du mot de passe : <span id="passwordLength">16</span></label>
+    <input type="range" id="length" min="12" max="128">
+
+    <div class="checkboxes">
+      <label><input type="checkbox" id="includeUppercase" checked> Majuscules</label>
+      <label><input type="checkbox" id="includeLowercase" checked> Minuscules</label>
+      <label><input type="checkbox" id="includeNumbers" checked> Chiffres</label>
+      <label><input type="checkbox" id="includeSymbols" checked> Symboles</label>
+    </div>
+
+    <button onclick="generatePassword()">Générer le mot de passe ⮕</button>
+
+    <div id="passwordDisplay" class="password-display"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
+
+
+
