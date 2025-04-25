@@ -19,10 +19,12 @@
       <label><input type="checkbox" id="includeSymbols" checked> Symboles</label>
     </div>
 
-    <button onclick="generatePassword()">Générer le mot de passe ⮕</button>
+    <button onclick="generatePassword()" class="generate-btn">Générer le mot de passe ⮕</button>
 
+   
     <div id="passwordDisplay" class="password-display"></div>
-  </div>
+    <button class="copy-btn" onclick="copyToClipboard()">📋 Copier</button>
+    
 
   <script src="script.js"></script>
 </body>
