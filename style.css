@@ -20,14 +20,15 @@ body {
     margin: auto;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     opacity: 0.9;
+    animation: glow 1.5s infinite alternate;
   }
   
   h1 {
     font-size: 2rem; 
     text-align: center;
     color: #000000; 
-    animation: animate 6s infinite; 
     padding-bottom: 40px;
+    animation: animate 6s infinite; 
   }
 
   input[type="range"] {
@@ -126,7 +127,14 @@ body {
 
  
 
-  
+  @keyframes glow {
+    0% {
+      box-shadow: 0 0 5px rgb(255, 255, 255);
+    }
+    100% {
+      box-shadow: 0 0 20px rgba(255, 255, 255);
+    }
+  }
  
   
   
